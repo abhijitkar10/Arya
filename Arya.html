@@ -432,3 +432,20 @@
         color: #888;
     }
 </style>
+<script>
+    window.onload = function() {
+        // Hide the main content initially
+        document.body.style.display = 'none';
+        
+        // Prompt for password
+        let password = prompt("Please enter the password to view this site:");
+        
+        // Check password (you can change 'yourpassword' to whatever you want)
+        if (password === "aryadutta9c") {
+            document.body.style.display = 'block';
+        } else {
+            alert("Incorrect password!");
+            window.location.reload(); // Reload page to try again
+        }
+    }
+</script>
